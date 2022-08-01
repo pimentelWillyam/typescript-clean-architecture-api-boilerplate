@@ -1,7 +1,0 @@
-{
-  "name": "boilerplate-api-node-typescript",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/pimentelWillyam/boilerplate-api-node-typescript.git",
-  "license": "MIT"
-}
