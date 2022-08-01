@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/pimentelWillyam/boilerplate-api-node-typescript/issues"
   },
-  "homepage": "https://github.com/pimentelWillyam/boilerplate-api-node-typescript#readme"
+  "homepage": "https://github.com/pimentelWillyam/boilerplate-api-node-typescript#readme",
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
 }
