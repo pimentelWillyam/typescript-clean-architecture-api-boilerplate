@@ -9,7 +9,7 @@ app.get('/', function (req, res) {
     res.status(200).send({ message: "Hello" });
 });
 app.use(cors({
-    origin: ["".concat(process.env.LOCALHOST)]
+    origin: ["".concat(process.env.HOST)]
 }));
 app.listen(process.env.PORT, function () {
     console.log("Escutando na porta ".concat(process.env.PORTA));

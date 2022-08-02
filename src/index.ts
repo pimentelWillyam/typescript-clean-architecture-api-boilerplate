@@ -13,7 +13,7 @@ app.get('/', ( req: Request, res: Response) =>{
 })
 
 app.use(cors({
-    origin: [`${process.env.LOCALHOST}`]
+    origin: [`${process.env.HOST}`]
 }))
 
 app.listen(process.env.PORT, () =>{
