@@ -4,9 +4,10 @@ import * as express from "express"
 //importando service da rota
 import {ExemploService} from "../services/exemploService"
 
-const exemploService: ExemploService = new ExemploService()
+const exemploService = new ExemploService()
 
 //criando rotas
 export const exemploRota  = express.Router()
 
-exemploRota.get("/saudacao", (req,res) => {res.send("oi")})
+exemploRota.get("/saudacao", (req,res) => {exemploService.sauda(req,res)})
+exemploRota.get("/despedida",(req,res) =>{exemploService.despede(req,res)})

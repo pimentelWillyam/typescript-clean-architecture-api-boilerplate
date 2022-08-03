@@ -18,9 +18,6 @@ app.use(cors())
 
 //utilizando rotas da api
 app.use("/api", exemploRota) 
-app.get('/', (req, res) => {
-    res.send('Hello World, from express');
-});
 
 
 

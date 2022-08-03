@@ -15,6 +15,3 @@ exports.app.use(express.json());
 exports.app.use(cors());
 //utilizando rotas da api
 exports.app.use("/api", exemploRota_1.exemploRota);
-exports.app.get('/', function (req, res) {
-    res.send('Hello World, from express');
-});
