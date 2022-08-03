@@ -1,5 +1,5 @@
 import {app} from "./api/app"
 
-app.listen(3000, () =>{
-    console.log(`porta 3000`)
+app.listen(process.env.PORTA, () =>{
+    console.log(`aplicação iniciada na porta ${process.env.PORTA}`)
 })
