@@ -1,12 +1,12 @@
 import {Request,Response} from "express"
 
 export class ExemploService{
-    sauda(req: Request, res: Response){
+    saudacao(res: Response){
         res.status(200).json({
-            message:"oi"
+            message:"opa, tudo bom?"
         })
     }
-    despede(req: Request, res: Response){
+    despedida(res: Response){
             res.status(200).json({
                 message: "tchau"
             })

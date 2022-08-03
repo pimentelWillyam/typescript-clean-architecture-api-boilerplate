@@ -2,7 +2,7 @@
 require("dotenv-safe").config({silent: true});
 
 // importando rotas
-import {exemploRota} from "./routes/exemploRota";
+import {exemploRota} from "./routes/exemploRoute";
 
 //importando core da api
 import * as express from "express"

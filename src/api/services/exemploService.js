@@ -4,12 +4,12 @@ exports.ExemploService = void 0;
 var ExemploService = /** @class */ (function () {
     function ExemploService() {
     }
-    ExemploService.prototype.sauda = function (req, res) {
+    ExemploService.prototype.saudacao = function (res) {
         res.status(200).json({
-            message: "oi"
+            message: "opa, tudo bom?"
         });
     };
-    ExemploService.prototype.despede = function (req, res) {
+    ExemploService.prototype.despedida = function (res) {
         res.status(200).json({
             message: "tchau"
         });
