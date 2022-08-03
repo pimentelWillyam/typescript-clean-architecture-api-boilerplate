@@ -1,5 +1,5 @@
-import app from "./api/app"
+import {app} from "./api/app"
 
-app.listen(process.env.PORT, () =>{
-    console.log(`Escutando no host ${process.env.HOST} porta ${process.env.PORTA}`)
+app.listen(3000, () =>{
+    console.log(`porta 3000`)
 })

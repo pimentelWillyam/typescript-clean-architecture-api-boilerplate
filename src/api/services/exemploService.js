@@ -1,10 +1,15 @@
 "use strict";
 exports.__esModule = true;
-var ExemploService = function () {
-    var cumprimenta = function (req, res) {
+exports.ExemploService = void 0;
+var ExemploService = /** @class */ (function () {
+    function ExemploService() {
+    }
+    ExemploService.prototype.sauda = function (req, res) {
+        console.log("chegou aqui");
         res.status(200).json({
             message: "oi"
         });
     };
-};
-exports["default"] = ExemploService;
+    return ExemploService;
+}());
+exports.ExemploService = ExemploService;

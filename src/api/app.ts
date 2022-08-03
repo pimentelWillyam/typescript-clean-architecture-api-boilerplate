@@ -1,25 +1,26 @@
 // importando .env
 require("dotenv-safe").config({silent: true});
 
+// importando rotas
+import {exemploRota} from "./routes/exemploRota";
+
 //importando core da api
-import  {Express} from "express";
 import * as express from "express"
 import * as bodyParser from "body-parser";
 import * as cors from "cors"
 
-// importando rotas
-import exemploRota from "./routes/exemploRota";
+// criando o app
+export const app = express()
 
-const app: Express = express()
-app.use(bodyParser.json())
-app.use(cors({
-    origin: [`${process.env.HOST}`]
-}))
+//app.use(bodyParser.json())
+app.use(express.json())
+app.use(cors())
 
 //utilizando rotas da api
-app.use("/api",exemploRota)
-
-export default app
+app.use("/api", exemploRota) 
+app.get('/', (req, res) => {
+    res.send('Hello World, from express');
+});
 
 
 

@@ -1,12 +1,11 @@
 import {Request,Response} from "express"
 
-const ExemploService: Object = () =>{
-
-    const cumprimenta = (req: Request, res: Response) =>{
+export class ExemploService{
+    sauda(req: Request, res: Response){
+        console.log("chegou aqui")
         res.status(200).json({
             message:"oi"
         })
+
     }
 }
-
-export default ExemploService
