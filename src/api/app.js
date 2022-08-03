@@ -4,7 +4,7 @@ exports.app = void 0;
 // importando .env
 require("dotenv-safe").config({ silent: true });
 // importando rotas
-var exemploRoute_1 = require("./routes/exemploRoute");
+var dialogoRoute_1 = require("./routes/dialogoRoute");
 //importando core da api
 var express = require("express");
 var cors = require("cors");
@@ -14,4 +14,4 @@ exports.app = express();
 exports.app.use(express.json());
 exports.app.use(cors());
 //utilizando rotas da api
-exports.app.use("/api", exemploRoute_1.exemploRota);
+exports.app.use("/api", dialogoRoute_1.dialogoRoute);

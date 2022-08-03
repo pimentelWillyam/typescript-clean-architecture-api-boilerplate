@@ -1,6 +1,6 @@
-import {Request,Response} from "express"
+import {Response} from "express"
 
-export class ExemploService{
+export class DialogoService{
     saudacao(res: Response){
         res.status(200).json({
             message:"opa, tudo bom?"
