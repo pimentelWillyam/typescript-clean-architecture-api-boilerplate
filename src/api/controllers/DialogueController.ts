@@ -1,19 +1,21 @@
 import {Request,Response} from "express"
 
-import {DialogoValidator} from "../validators/DialogoValidator"
-const dialogoValidator = new DialogoValidator()
+import DialogueValidator from "../validators/DialogueValidator"
+const dialogueValidator = new DialogueValidator()
 
-import { DialogoService } from "../services/DialogoService"
-const dialogoService = new DialogoService()
+import DialogueService from "../services/DialogueService"
+const dialogueService = new DialogueService()
 
-export class DialogoController{
-    postaDialogo(req: Request, res: Response){
-        if (dialogoValidator.eSaudacao(req)){
-            dialogoService.saudacao(res)
+class DialogueController{
+    postaDialogue(req: Request, res: Response){
+        if (dialogueValidator.isSalute(req)){
+            dialogueService.salute(res)
         }
         else{
-            dialogoService.despedida(res)
+            dialogueService.farewell(res)
         }
     }
 
 }
+
+export default DialogueController

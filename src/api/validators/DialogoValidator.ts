@@ -1,7 +1,7 @@
 import { Request } from "express";
 
-export class DialogoValidator{
-    eSaudacao(req: Request){
+class DialogueValidator{
+    isSalute(req: Request){
         if (req.body.mensagem === "bom dia"){
             return true
         }
@@ -10,3 +10,5 @@ export class DialogoValidator{
         }
     }
 }
+
+export default DialogueValidator

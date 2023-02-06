@@ -3,10 +3,12 @@ import * as express from "express"
 import { Request, Response } from "express"
 
 //importando service da rota
-import {DialogoController} from "../controllers/DialogoController"
-const dialogoController = new DialogoController()
+import DialogueController from "../controllers/DialogueController"
+const dialogueController = new DialogueController()
 
 //criando rotas
-export const dialogoRoute  = express.Router()
+const dialogueRoutes  = express.Router()
 
-dialogoRoute.post("/dialogo", (req: Request,res: Response) => {dialogoController.postaDialogo(req,res)})
+dialogueRoutes.post("/dialogue", (req: Request,res: Response) => {dialogueController.postaDialogue(req,res)})
+
+export default dialogueRoutes
