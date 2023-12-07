@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "server": " ts-node-dev ./src/index.ts",
+    "test": "jest",
     "build": "tsc ./src/index.ts"
   },
   "repository": {
